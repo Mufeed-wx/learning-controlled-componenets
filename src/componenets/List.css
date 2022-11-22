@@ -1,0 +1,19 @@
+.ListItems {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.status {
+    padding: 2px 10px;
+    border-radius: 4px;
+    color: white;
+}
+.list-title {
+    display: flex;
+    justify-content: space-between;
+}
+.list-title label{
+    cursor: pointer;
+    font-size: 12px;
+    color: blue;
+}
