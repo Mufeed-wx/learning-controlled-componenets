@@ -3,7 +3,9 @@ import React from 'react'
 const style = {
     display: "inline-block",
     margin:"10px 0px"
-
+}
+const mainStyle = {
+    padding: "0px 100px 100px 100px"
 }
 class Tools extends React.Component {
     render() {
@@ -11,7 +13,7 @@ class Tools extends React.Component {
         // const onlychild = React.Children.only(children)
         // const count = React.Children.count(onlychild.props.children)
         return (
-            <div>
+            <div className='list' style={mainStyle}>
                 <div className='List-header'>
                     <select value={labelStatus} onChange={onListChange} name='status'>
                         <option  value='all'>All</option>

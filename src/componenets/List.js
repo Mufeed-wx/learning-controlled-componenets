@@ -1,11 +1,11 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './List.css'
+// import Label from './Label';
+import Label2 from './Label2';
 
 class List extends React.Component {
     render() {
-        console.log('render');
         const {desc, title, IsActive,onDelete ,onLabelClick} = this.props
         const style = IsActive ?  {backgroundColor:'blue'}  :  {backgroundColor:'red'}
         return (
@@ -18,11 +18,8 @@ class List extends React.Component {
                     <p>{ desc}</p>
                 </div>
                 <div>
-                    <span
-                        onClick={() => {
-                            onLabelClick(IsActive?'active':'non-active')
-                        }}
-                        style={style} className='status'>{IsActive ? "Active" : "Non Active"}</span>
+                    {/* <Label onLabelClick={onLabelClick} IsActive={IsActive} style={style} /> */}
+                    <Label2 onLabelClick={onLabelClick} IsActive={IsActive} style={style}/>
                 </div>
             </div>
         )

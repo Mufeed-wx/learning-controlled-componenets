@@ -5,8 +5,8 @@ const SimpleList = (props) => {
     return (
         <div>
             {items.map((data, index) => {
-                return <List t
-                    itle={data.title}
+                return <List
+                    title={data.title}
                     key={index}
                     desc={data.des}
                     IsActive={data.IsActive}
