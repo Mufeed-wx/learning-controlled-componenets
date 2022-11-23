@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class DemmiData extends Component {
+export default class Sample extends Component {
     componentDidMount() {
         console.log('didmount', this.props.name);
     }

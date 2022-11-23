@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import DemmiData from './componenets/DemmiData';
+import DemmiData from './componenets/Sample';
 import Header from './componenets/Header';
 import Usage from './componenets/Usage';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePageClass';
+import HomePageFun from './pages/HomePageFun';
 
 export default class App extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ export default class App extends Component {
     const { currentPage } = this.state;
     switch (currentPage) {
       case 'home':
-        return <HomePage name='home'  />
+        return <HomePageFun name='home'  />
       case 'settings':
         return <DemmiData name='Settings' />
         case 'usage':

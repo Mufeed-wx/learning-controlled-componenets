@@ -14,10 +14,10 @@ export default class Header extends Component {
                         <Nav className="me-auto">
                             <Nav.Link onClick={() => {
                                 onMenuSelect('home')
-                            }} href="#home">Home</Nav.Link>
+                            }} href="#home">Booking</Nav.Link>
                             <Nav.Link href="#pricing" onClick={() => {
                                 onMenuSelect('usage')
-                            }}>Usage</Nav.Link>
+                            }}>Counter</Nav.Link>
                             <Nav.Link onClick={() => {
                                 onMenuSelect('settings')
                             }} href="#features">Settings</Nav.Link>

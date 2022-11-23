@@ -4,7 +4,7 @@ import { MyContext,MyNewContext } from '../pages/MyContext'
 export default class Label2 extends Component {
     render() {
         const { onLabelClick, IsActive, style } = this.props
-        console.log(this.context)
+        // console.log(this.context) using context provider value
         return (
             <div>
                 <MyContext.Consumer>

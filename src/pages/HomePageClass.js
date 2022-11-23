@@ -1,16 +1,18 @@
 import React from 'react'
 import Tools from '../componenets/Tools'
-import SimpleList from '../componenets/SimpleList';
+import SimpleList from '../componenets/List';
+
 import {
     MyContext,
     MyNewContext
 } from './MyContext'
+import JustInfo from './JustInfo';
 
 class HomePage extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: [],
+            data: [],   
             activeState: 'all',
             message: "",
             showlabel: true,
@@ -42,9 +44,6 @@ class HomePage extends React.Component {
                 message: "hai"
             })
         }
-    }
-    componentWillUnmount() {
-        console.log('will un mount');
     }
     onDelete = (item) => {
         const newItem = this.state.data.filter((data) => data.id !== item.id)
@@ -79,7 +78,7 @@ class HomePage extends React.Component {
         const count = newlist.length
         return (
             <>
-                <div style={{ padding: "100px 100px 0px 100px" }}>
+                <div style={{ padding: "20px 100px 0px 100px" }}>
                     <input onChange={this.showChange} checked={this.state.showlabel} type="checkbox" ></input> Show label
                 </div>
                 <MyNewContext.Provider value={'100'}>
@@ -89,6 +88,7 @@ class HomePage extends React.Component {
                         </Tools>
                     </MyContext.Provider>
                 </MyNewContext.Provider>
+                <JustInfo activeState={activeState} />
             </>
         )
     }
