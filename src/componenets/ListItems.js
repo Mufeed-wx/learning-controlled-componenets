@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './List.css'
-// import Label from './Label';
+ import Label from './Label';
 import Label2 from './Label2';
 
 class ListItems extends React.Component {
@@ -18,9 +18,9 @@ class ListItems extends React.Component {
                     <p>{ desc}</p>
                 </div>
                 <div>
-                    {/* <Label onLabelClick={onLabelClick} IsActive={IsActive} style={style} /> */}
+                    <Label onLabelClick={onLabelClick} IsActive={IsActive} style={style} />
                     {/* functional componenets Using ract context */}
-                    <Label2 onLabelClick={onLabelClick} IsActive={IsActive} style={style}/>
+                {/* <Label2 onLabelClick={onLabelClick} IsActive={IsActive} style={style}/> */}
                 </div>
             </div>
         )

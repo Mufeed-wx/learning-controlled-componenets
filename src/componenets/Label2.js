@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component,useState } from 'react'
 import { MyContext,MyNewContext } from '../pages/MyContext'
 
 export default class Label2 extends Component {
